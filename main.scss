@@ -30,7 +30,7 @@ body {
         display: flex;
         flex-direction: column;
         text-align: center;
-        transition: all 0.7s;
+        transition: all 0.4s;
 
         &.playing {
             transform: scale(1.1);
