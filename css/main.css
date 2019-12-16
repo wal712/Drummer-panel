@@ -43,6 +43,16 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.keys .key.playing {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-color: #ffc600;
+  -webkit-box-shadow: 0 0 10px #ffc600;
+          box-shadow: 0 0 10px #ffc600;
 }
 
 .keys .key kbd {
