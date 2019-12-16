@@ -1,3 +1,8 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5,13 +10,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
-  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .keys {
-  width: 60%;
-  height: 30%;
+  width: 100%;
+  height: 20%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,5 +24,33 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 4rem;
+}
+
+.keys .key {
+  border: 4px solid black;
+  margin: 0.5rem;
+  width: 5%;
+  min-width: 58px;
+  height: 70px;
+  padding: 1rem;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.keys .key kbd {
+  font-size: 3rem;
+  margin: 0 1rem;
+}
+
+.keys .key .sound {
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

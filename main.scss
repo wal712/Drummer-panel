@@ -1,14 +1,41 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 body {
     display: flex;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    box-sizing: border-box;
 }
 
 .keys {
-    width: 60%;
-    height: 30%;
+    width: 100%;
+    height: 20%;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    padding: 0 4rem;
+
+    .key {
+        border: 4px solid black;
+        margin: 0.5rem;
+        width: 5%;
+        min-width: 58px;
+        height: 70px;
+        padding: 1rem;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        kbd {
+            font-size: 3rem;
+            margin: 0 1rem;
+        }
+        
+        .sound {
+            margin-top: 1rem;
+        }
+    }
 }
